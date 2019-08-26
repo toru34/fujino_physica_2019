@@ -213,7 +213,7 @@ int main()
             for (auto lambda : lambdas) {
                 // Create result directory
                 char result_dir[1000];
-                sprintf(result_dir, "/Users/torufujino/data/research/physica_2018/result/m%d_s%d_nagents%d_niters%d_nruns%d_l%d_lambda%d_hetero%d_random%d", m, s, N_AGENTS, N_ITERS, N_RUNS, L, lambda, IS_HETERO, IS_RANDOM);
+                sprintf(result_dir, "../result/m%d_s%d_nagents%d_niters%d_nruns%d_l%d_lambda%d_hetero%d_random%d", m, s, N_AGENTS, N_ITERS, N_RUNS, L, lambda, IS_HETERO, IS_RANDOM);
 
                 char command[1000];
                 sprintf(command, "mkdir -p %s", result_dir);
