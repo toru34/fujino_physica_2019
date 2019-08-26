@@ -17,9 +17,6 @@ Strategy::Strategy(const int p, const bool is_hetero)
     } else {
         this->k = -1;
         for (unsigned i = 0; i < p; ++i) {
-            this->actions.emplace_back(rng() % 2);
-        }
-        for (unsigned i = 0; i < p; ++i) {
             if (rng_uniform(engine) < 0.5) {
                 this->actions.emplace_back(OUT_ROUTE); // outside route
             } else {
